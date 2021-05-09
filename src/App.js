@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import ListItems from './ListItems.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -67,16 +66,19 @@ class App extends React.Component{
       <div className="App">
         <header>
           <form id="to-do-list" onSubmit={this.addItem}>
-            <input type="text" placeholder="Enter text" 
+            <input type="text" placeholder="Enter Text" 
             value={this.state.currentItem.text}
             onChange={this.handleInput}
             />
-            <button type="submit">Add</button>
+            <button type="submit">ADD</button>
           </form>
         </header>
-        <ListItems items={this.state.items}
-        deleteItem = {this.deleteItem}
-        setUpdate = {this.setUpdate}></ListItems>
+        <div className="cards">
+          <ListItems items={this.state.items}
+            deleteItem = {this.deleteItem}
+            setUpdate = {this.setUpdate}>
+          </ListItems>
+        </div>
       </div>
     );
   }

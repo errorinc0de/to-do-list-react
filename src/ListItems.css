@@ -1,7 +1,7 @@
 .list{
-    color: burlywood;
+    color: rgb(255, 255, 255);
     width: 350px;
-    background-color: royalblue;
+    background-color: rgb(176, 86, 228);
     height: 50px;
     margin: 20px auto;
     border-radius:5px;
@@ -26,6 +26,8 @@
     border: 0;
     color: white;
     font-size: 18px;
+    border-radius: 20px;
+    padding: 5px;
 }
 .list p input:focus{
     outline: none;

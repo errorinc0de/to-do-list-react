@@ -1,19 +1,20 @@
 body{
-  background-color: royalblue;
+  background-color: #a265ee;
 }
 
 .App{
-  background-color: cyan;
+  background-color: #b47ff5;
   min-height: 500px;
   width: 400px;
   margin: 40px auto;
+  border-radius:20px;
 }
 
 #to-do-list input{
-  background-color: rosybrown;
+  background-color: #9d68df;
   border: 0;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 50px;
   padding: 0 20px;
   margin: 20px;
@@ -30,16 +31,21 @@ body{
 }
 
 #to-do-list button{
-  background-color: rosybrown;
+  background-color: #9d68df;
   border: 0;
   width: 100px;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 50px;
   cursor: pointer;
   font-weight: bolder;
+  font-size: 18px;
   color: white;
 }
 
 #to-do-list button:focus{
   outline: none;
+}
+
+.cards{
+  padding: 10px;
 }

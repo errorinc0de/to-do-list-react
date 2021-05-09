@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Head from './Title.js';
 import reportWebVitals from './reportWebVitals';
+import Grid from '@material-ui/core/Grid';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Head id="heading">
+    </Head>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
